@@ -20,7 +20,7 @@
 5. Run the `create_server.sh` script on `air-k8s-server`:  
    `[root@localhost ~]# ./create_server.sh`
 6. Disconnect `air-k8s-server` from the external network and connect it to the internal network (ensure no internet access).
-7. Start the registry container on `air-k8s-server`.
+7. Start the registry container on `air-k8s-server`. $docker start $(docker ps -a -q)
 8. Perform a minimal installation of openEuler for the k8s master. Upload `cgroups.sh` and `k8s-auto-master.sh` to the master.
 9. Configure the master's IP address.
 10. Run the `cgroups.sh` script; the system will automatically reboot.
