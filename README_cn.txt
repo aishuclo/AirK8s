@@ -15,7 +15,7 @@
 	5、在air-k8s-server上运行create_server.sh脚本
 	[root@localhost ~]# ./create_server.sh	
 	6、将air-k8s-server断开外网，连接到内网，确保不能够上网
-	7、启动air-k8s-server的registry容器
+	7、启动air-k8s-server的registry容器：$docker start $(docker ps -a -q)
 
 	8、最小化安装openEuler，用于k8s的master，上传cgroups.sh k8s-auto-master.sh到master
 	9、配置master的IP
