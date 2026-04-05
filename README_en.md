@@ -45,7 +45,7 @@
 14. Perform a minimal installation of openEuler for k8s node01. Upload `cgroups.sh` and `k8s-auto-node01.sh` to node01.
 15. Configure node01's IP address.
 16. Run `cgroups.sh`; the system will automatically reboot.
-17. Modify `k8s-auto-node01.sh` on the master according to your plan. Example:  
+17. Modify `k8s-auto-node01.sh` on the node01 according to your plan. Example:  
     ```
     MASTER_NAME=master
     MASTER_IP=192.168.228.130
@@ -56,7 +56,7 @@
     NODE01_NAME=node01
     NODE01_IP=192.168.228.131
     ```
-18. After the master reboots, run `k8s-auto-node01.sh`:  
+18. After the node01 reboots, run `k8s-auto-node01.sh`:  
     `[root@master ~]# ./k8s-auto-node01.sh`  
     user password: user  
     root password: root  
