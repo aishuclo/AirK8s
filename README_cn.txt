@@ -41,7 +41,7 @@
 	14、最小化安装openEuler，用于k8s的node01，上传cgroups.sh k8s-auto-node01.sh到node01
 	15、配置node01的IP
 	16、运行脚本cgroups.sh，系统将自动重启
-	17、根据规划情况在master中修改k8s-auto-node01.sh，示例如下
+	17、根据规划情况在node01中修改k8s-auto-node01.sh，示例如下
 	MASTER_NAME=master
 	MASTER_IP=192.168.228.130
 	MASTER_IP_MASK=24
@@ -51,8 +51,8 @@
 	NODE01_NAME=node01
 	NODE01_IP=192.168.228.131
 	
-	18、master重启后，运行k8s-auto-node01.sh
-		[root@master ~]# ./k8s-auto-node01.sh
+	18、node01重启后，运行k8s-auto-node01.sh
+		[root@node01 ~]# ./k8s-auto-node01.sh
 		user密码：user
 		root密码：root
 		所有[y/N]：输入y
